@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelatihan Brevet Pajak A & B - Mandiri Tax Center</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            navy: '#0b2853',
+                            blue: '#0070c0',
+                            lightblue: '#00a3e0',
+                            red: '#e31e24',
+                            green: '#71b32a',
+                            wagreen: '#25d366',
+                            gold: '#f59e0b',
+                            bglight: '#f4f7fc'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'card': '0 10px 30px -5px rgba(11, 40, 83, 0.08)',
+                        'glow': '0 0 25px rgba(227, 30, 36, 0.35)',
+                        'wa-glow': '0 8px 25px rgba(37, 211, 102, 0.4)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+            color: #1e293b;
+            background-color: #f8fafc;
+        }
+
+        .bg-grid-pattern {
+            background-image: radial-gradient(#0070c0 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+            opacity: 0.07;
+        }
+
+        .gradient-banner {
+            background: linear-gradient(135deg, #0b2853 0%, #0070c0 100%);
+        }
+
+        .pulse-subtle {
+            animation: pulse-animation 2s infinite;
+        }
+
+        @keyframes pulse-animation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        .badge-shine {
+            position: relative;
+            overflow: hidden;
+        }
+        .badge-shine::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                60deg,
+                transparent 30%,
+                rgba(255, 255, 255, 0.3) 50%,
+                transparent 70%
+            );
+            transform: rotate(30deg);
+            animation: shine 4s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%) rotate(30deg); }
+            20% { transform: translateX(100%) rotate(30deg); }
+            100% { transform: translateX(100%) rotate(30deg); }
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-red selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-red text-white py-2 px-4 text-center text-xs md:text-sm font-semibold tracking-wide shadow-inner">
+        🔥 Pendaftaran Angkatan Baru Dibuka! Kuota Terbatas untuk Jaga Kualitas Pembelajaran.
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="https://mandiritaxcenter.id/" target="_blank" class="flex items-center gap-3 group">
+                <div class="flex items-center">
+                    <!-- Brand SVG Styled Logo Logo matching MTC colors -->
+                    <div class="flex items-center font-extrabold text-2xl tracking-tighter">
+                        <span class="text-brand-red text-3xl md:text-4xl">m</span>
+                        <span class="text-brand-green text-3xl md:text-4xl">t</span>
+                        <span class="text-brand-blue text-3xl md:text-4xl">c</span>
+                    </div>
+                    <div class="ml-2 pl-2 border-l-2 border-slate-300">
+                        <div class="text-xs md:text-sm font-black text-brand-navy leading-tight uppercase tracking-wider">Mandiri Tax Center</div>
+                        <div class="text-[10px] md:text-xs text-slate-500 font-medium hidden sm:block">Lembaga Pendidikan & Pelatihan Perpajakan</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Header CTA Button -->
+            <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
+               target="_blank"
+               class="inline-flex items-center gap-2 bg-brand-wagreen hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold py-2.5 px-4 sm:px-5 rounded-full shadow-md transition-all duration-300 hover:scale-105">
+                <i class="fa-brands font-bold fa-whatsapp text-lg"></i>
+                <span class="hidden sm:inline">Konsultasi</span> Gratis
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================================
+             SECTION 1: ATTENTION (Hero & Main Headline)
+             ======================================================== -->
+        <section class="relative bg-gradient-to-b from-slate-900 via-brand-navy to-brand-navy text-white overflow-hidden pt-8 pb-16 lg:py-20">
+            <!-- Background Decorative Grid -->
+            <div class="absolute inset-0 bg-grid-pattern pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Top Badge Pill -->
+                <div class="flex justify-center mb-6">
+                    <span class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-blue-200 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full">
+                        <i class="fa-solid fa-graduation-cap text-brand-gold"></i>
+                        Lembaga Pendidikan & Pelatihan Perpajakan Resmi
+                    </span>
+                </div>
+
+                <!-- Main Headline -->
+                <div class="text-center max-w-4xl mx-auto space-y-4">
+                    <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                        Masih Bingung Cara Hitung & Lapor Pajak Sendiri?
+                    </h1>
+                    
+                    <!-- Urgency Alert Banner -->
+                    <div class="inline-block bg-brand-red text-white text-sm sm:text-lg lg:text-xl font-black px-4 sm:px-8 py-2.5 rounded-2xl shadow-glow uppercase tracking-wide my-2 border border-red-400/30">
+                        ⚠️ JANGAN SAMPAI KENA SANKSI ATAU KETINGGALAN PELUANG KARIR!
+                    </div>
+
+                    <!-- Sub-headline -->
+                    <p class="text-slate-200 text-base sm:text-lg lg:text-xl font-normal leading-relaxed max-w-3xl mx-auto pt-2">
+                        Kuasai Praktik Perpajakan <strong class="text-amber-300 font-bold">Brevet A & B</strong> Bareng Mandiri Tax Center. <br class="hidden sm:inline"/>
+                        Dari Nol Sampai Mahir Hitung, Lapor, Bayar, dan Bikin Laporan Pajak Sendiri!
+                    </p>
+                </div>
+
+                <!-- Visual / Feature Card Container (Poster Visual Reference Layout) -->
+                <div class="mt-10 lg:mt-12 max-w-5xl mx-auto">
+                    <!-- Interactive / Feature Highlights Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-8">
+                        <!-- Card 1 -->
+                        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 text-center hover:bg-white/20 transition-all duration-300">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-xl bg-brand-blue/30 flex items-center justify-center text-amber-300 text-2xl">
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                            </div>
+                            <h2 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">PELATIHAN PRAKTIS</h2>
+                            <p class="text-[11px] sm:text-xs text-slate-300 mt-1">100% Praktik Siap Kerja</p>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 text-center hover:bg-white/20 transition-all duration-300">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-xl bg-brand-blue/30 flex items-center justify-center text-cyan-300 text-2xl">
+                                <i class="fa-solid fa-laptop-house"></i>
+                            </div>
+                            <h2 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">KELAS FLEKSIBEL</h2>
+                            <p class="text-[11px] sm:text-xs text-slate-300 mt-1">Online & Offline Tatap Muka</p>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 text-center hover:bg-white/20 transition-all duration-300 relative badge-shine">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-xl bg-brand-blue/30 flex items-center justify-center text-amber-400 text-2xl">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <h2 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">SERTIFIKAT RESMI</h2>
+                            <p class="text-[11px] sm:text-xs text-slate-300 mt-1">Diakui Karir & Bisnis</p>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 text-center hover:bg-white/20 transition-all duration-300">
+                            <div class="w-12 h-12 mx-auto mb-2 rounded-xl bg-brand-blue/30 flex items-center justify-center text-emerald-400 text-2xl">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <h2 class="text-xs sm:text-sm font-bold text-white uppercase tracking-wider">PENGAJAR PRAKTISI</h2>
+                            <p class="text-[11px] sm:text-xs text-slate-300 mt-1">Ahli & Berpengalaman</p>
+                        </div>
+                    </div>
+
+                    <!-- Visual Banner Graphic Representation (Simulation of Classroom & Official Certificate) -->
+                    <div class="relative bg-gradient-to-r from-slate-800 to-slate-900 rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl overflow-hidden">
+                        <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                            <div class="space-y-3 text-center md:text-left">
+                                <span class="bg-brand-red/90 text-white text-xs font-black uppercase px-3 py-1 rounded-md">Bimbingan Intensif</span>
+                                <h3 class="text-xl sm:text-2xl font-bold text-white">
+                                    Simulasi Langsung Aplikasi DJP Online (e-Filing & e-SPT)
+                                </h3>
+                                <p class="text-slate-300 text-xs sm:text-sm max-w-xl">
+                                    Didampingi instruktur senior hingga mahir menyusun laporan pajak tanpa rasa ragu dan takut salah.
+                                </p>
+                            </div>
+
+                            <!-- Certificate Badge Display -->
+                            <div class="flex-shrink-0 flex items-center gap-3 bg-white/10 backdrop-blur-lg border border-amber-400/40 p-4 rounded-2xl shadow-xl">
+                                <div class="w-16 h-16 rounded-full bg-amber-400/20 border-2 border-amber-400 flex items-center justify-center text-amber-400 text-3xl">
+                                    <i class="fa-solid fa-award"></i>
+                                </div>
+                                <div class="text-left">
+                                    <div class="text-xs text-amber-300 font-semibold uppercase tracking-wider">Sertifikat Kelulusan</div>
+                                    <div class="text-sm font-bold text-white">Brevet Pajak A & B</div>
+                                    <div class="text-[10px] text-slate-300">Resmi & Diakui Perusahaan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Hero CTA Button -->
+                    <div class="mt-8 text-center">
+                        <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
+                           target="_blank"
+                           class="pulse-subtle inline-flex items-center justify-center gap-3 bg-brand-wagreen hover:bg-emerald-600 text-white text-base sm:text-xl font-extrabold py-4 px-8 sm:px-10 rounded-2xl shadow-wa-glow transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto">
+                            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+                            <span>Tanya Jadwal & Konsultasi Kelas via WhatsApp</span>
+                            <i class="fa-solid fa-chevron-right text-sm"></i>
+                        </a>
+                        <p class="text-xs text-slate-300 mt-3 flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-shield-halved text-brand-green"></i> 
+                            Respon Cepat & Free Konsultasi Kebutuhan Anda
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================
+             SECTION 2: INTEREST (Problem Identification & Bridge)
+             ======================================================== -->
+        <section class="py-16 lg:py-24 bg-brand-bglight relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Title -->
+                <div class="text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+                    <span class="text-brand-blue font-bold text-xs sm:text-sm uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">
+                        Apakah Ini Yang Anda Rasakan?
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-navy mt-3">
+                        Apakah Anda Mengalami Salah Satu Dari Hal Ini?
+                    </h2>
+                    <div class="w-16 h-1 bg-brand-red mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <!-- Target Audience Problem Cards (3 Columns) -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    
+                    <!-- Target 1: Mahasiswa / Fresh Graduate -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                        <div>
+                            <!-- Header Icon -->
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl font-bold group-hover:bg-emerald-600 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-user-graduate"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider">Target #1</span>
+                                    <h3 class="text-lg font-bold text-brand-navy">Mahasiswa / Fresh Graduate</h3>
+                                </div>
+                            </div>
+
+                            <!-- Bullet Points -->
+                            <ul class="space-y-4 text-sm text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xs flex-shrink-0 mt-0.5"><i class="fa-solid fa-xmark"></i></span>
+                                    <span>Punya teori kampus tapi masih bingung <strong>praktik nyata perpajakan</strong> di dunia kerja?</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xs flex-shrink-0 mt-0.5"><i class="fa-solid fa-xmark"></i></span>
+                                    <span>Sulit bersaing melamar kerja karena belum memiliki <strong>Sertifikat Brevet A & B</strong>?</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Target 2: Karyawan / Staf Keuangan -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                        <div>
+                            <!-- Header Icon -->
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 rounded-2xl bg-blue-100 text-brand-blue flex items-center justify-center text-2xl font-bold group-hover:bg-brand-blue group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] font-bold text-brand-blue uppercase tracking-wider">Target #2</span>
+                                    <h3 class="text-lg font-bold text-brand-navy">Karyawan / Staf Keuangan</h3>
+                                </div>
+                            </div>
+
+                            <!-- Bullet Points -->
+                            <ul class="space-y-4 text-sm text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xs flex-shrink-0 mt-0.5"><i class="fa-solid fa-xmark"></i></span>
+                                    <span>Sering ragu saat harus menghitung <strong>PPh Pasal 21/23/25 or PPN</strong> kantor?</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xs flex-shrink-0 mt-0.5"><i class="fa-solid fa-xmark"></i></span>
+                                    <span>Takut terjadi <strong>kesalahan lapor pajak</strong> yang berpotensi merugikan perusahaan?</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Target 3: Pemilik UMKM & Owner Bisnis -->
+                    <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-card hover:shadow-xl transition-all duration-300 flex flex-col justify-between group hover:-translate-y-1">
+                        <div>
+                            <!-- Header Icon -->
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl font-bold group-hover:bg-amber-600 group-hover:text-white transition-all">
+                                    <i class="fa-solid fa-store"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] font-bold text-amber-600 uppercase tracking-wider">Target #3</span>
+                                    <h3 class="text-lg font-bold text-brand-navy">Pemilik UMKM & Owner Bisnis</h3>
+                                </div>
+                            </div>
+
+                            <!-- Bullet Points -->
+                            <ul class="space-y-4 text-sm text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xs flex-shrink-0 mt-0.5"><i class="fa-solid fa-xmark"></i></span>
+                                    <span>Pusing dan kewalahan mengatur <strong>pembukuan pajak usaha</strong> secara rapi?</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-red-100 text-brand-red flex items-center justify-center text-xs flex-shrink-0 mt-0.5"><i class="fa-solid fa-xmark"></i></span>
+                                    <span>Khawatir terkena <strong>sanksi denda pajak</strong> akibat kurang paham regulasi terbaru?</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Solution Bridge Box (Golden/Yellow Accent Box from Poster) -->
+                <div class="mt-12 bg-gradient-to-r from-amber-500/10 via-amber-400/20 to-amber-500/10 border-2 border-amber-400/40 rounded-3xl p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-col md:flex-row items-center gap-5 text-center md:text-left">
+                        <div class="w-16 h-16 rounded-2xl bg-amber-400 text-slate-900 flex items-center justify-center text-3xl flex-shrink-0 shadow-md">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="space-y-1">
+                            <h3 class="text-lg sm:text-xl font-black text-brand-navy">Solusi Praktis & Sistematis Untuk Anda!</h3>
+                            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+                                Memahami perpajakan itu <strong>tidak harus rumit dan membingungkan</strong>. Di <strong class="text-brand-blue font-bold">Mandiri Tax Center</strong>, kami membimbing Anda langkah demi langkah hingga benar-benar paham dan siap terap secara praktis!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================
+             SECTION 3: DESIRE (Curriculum Skills & Benefits)
+             ======================================================== -->
+        <section class="py-16 lg:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="bg-emerald-100 text-brand-green font-bold text-xs sm:text-sm uppercase tracking-widest px-3 py-1 rounded-full">
+                        Materi 100% Praktik
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-navy mt-3">
+                        Apa yang Akan Anda Kuasai di Pelatihan Brevet A & B?
+                    </h2>
+                    <p class="text-slate-600 text-sm sm:text-base mt-2">
+                        Kami tidak hanya mengajarkan teori, tetapi fokus pada <strong class="text-brand-red font-bold">100% Praktik Lapangan</strong>:
+                    </p>
+                </div>
+
+                <!-- 5 Steps Horizontal Flow Grid (Matching poster steps 1-5) -->
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-4 lg:gap-6">
+                    
+                    <!-- Item 1 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative hover:border-brand-blue hover:shadow-md transition-all text-center flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-brand-navy text-white font-extrabold text-base flex items-center justify-center mx-auto mb-4 shadow-md">
+                                1
+                            </div>
+                            <div class="text-3xl text-brand-blue mb-3">
+                                <i class="fa-solid fa-gavel"></i>
+                            </div>
+                            <h3 class="font-bold text-brand-navy text-sm mb-2">Dasar & Aturan Perpajakan Terbaru</h3>
+                            <p class="text-slate-600 text-xs">Memahami fondasi hukum pajak tanpa bahasa yang rumit.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative hover:border-brand-blue hover:shadow-md transition-all text-center flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-brand-navy text-white font-extrabold text-base flex items-center justify-center mx-auto mb-4 shadow-md">
+                                2
+                            </div>
+                            <div class="text-3xl text-brand-blue mb-3">
+                                <i class="fa-solid fa-calculator"></i>
+                            </div>
+                            <h3 class="font-bold text-brand-navy text-sm mb-2">Cara Hitung & Bayar Pajak</h3>
+                            <p class="text-slate-600 text-xs">PPh Orang Pribadi, PPh Badan, hingga PPN.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative hover:border-brand-blue hover:shadow-md transition-all text-center flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-brand-navy text-white font-extrabold text-base flex items-center justify-center mx-auto mb-4 shadow-md">
+                                3
+                            </div>
+                            <div class="text-3xl text-brand-blue mb-3">
+                                <i class="fa-solid fa-laptop-code"></i>
+                            </div>
+                            <h3 class="font-bold text-brand-navy text-sm mb-2">Cara Lapor Pajak (e-Filing/e-SPT)</h3>
+                            <p class="text-slate-600 text-xs">Praktik langsung menggunakan sistem pelaporan resmi.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative hover:border-brand-blue hover:shadow-md transition-all text-center flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-brand-navy text-white font-extrabold text-base flex items-center justify-center mx-auto mb-4 shadow-md">
+                                4
+                            </div>
+                            <div class="text-3xl text-brand-blue mb-3">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                            </div>
+                            <h3 class="font-bold text-brand-navy text-sm mb-2">Pembukuan & Pencatatan Pajak</h3>
+                            <p class="text-slate-600 text-xs">Menyusun laporan keuangan yang rapi dan patuh aturan.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-5 relative hover:border-brand-blue hover:shadow-md transition-all text-center flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-full bg-brand-navy text-white font-extrabold text-base flex items-center justify-center mx-auto mb-4 shadow-md">
+                                5
+                            </div>
+                            <div class="text-3xl text-brand-red mb-3">
+                                <i class="fa-solid fa-bullseye"></i>
+                            </div>
+                            <h3 class="font-bold text-brand-navy text-sm mb-2">Studi Kasus Nyata</h3>
+                            <p class="text-slate-600 text-xs">Memahami kasus nyata dan solusi praktis di dunia kerja.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Advantages & Testimonials Grid -->
+                <div class="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                    
+                    <!-- Advantage Table / Cards (Left 7 Cols) -->
+                    <div class="lg:col-span-7 bg-brand-navy rounded-3xl p-6 sm:p-8 text-white shadow-xl">
+                        <div class="mb-6">
+                            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Mengapa Harus MTC?</span>
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-white mt-1">
+                                Mengapa Memilih Mandiri Tax Center?
+                            </h3>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Feature 1 -->
+                            <div class="flex items-start gap-4 p-3.5 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-brand-blue flex items-center justify-center text-white text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-laptop-file"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Pilihan Kelas Fleksibel</h4>
+                                    <p class="text-slate-300 text-xs mt-0.5">Tersedia opsi Kelas Online (belajar dari mana saja) & Kelas Offline (tatap muka langsung).</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 2 -->
+                            <div class="flex items-start gap-4 p-3.5 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-emerald-600 flex items-center justify-center text-white text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-user-gear"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Pengajar Praktisi</h4>
+                                    <p class="text-slate-300 text-xs mt-0.5">Dibimbing langsung oleh ahli perpajakan berpengalaman.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 3 -->
+                            <div class="flex items-start gap-4 p-3.5 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-amber-500 flex items-center justify-center text-white text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-file-signature"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Sertifikat Resmi</h4>
+                                    <p class="text-slate-300 text-xs mt-0.5">Tambah nilai plus di CV Anda atau tingkatkan kredibilitas bisnis Anda.</p>
+                                </div>
+                            </div>
+
+                            <!-- Feature 4 -->
+                            <div class="flex items-start gap-4 p-3.5 bg-white/5 rounded-xl border border-white/10 hover:bg-white/10 transition-all">
+                                <div class="w-10 h-10 rounded-lg bg-purple-600 flex items-center justify-center text-white text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-handshake-angle"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Studi Kasus Nyata</h4>
+                                    <p class="text-slate-300 text-xs mt-0.5">Materi dirancang sesuai kebutuhan dunia kerja dan dinamika bisnis UMKM.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alumni Testimonial (Right 5 Cols - Matching Poster Layout) -->
+                    <div class="lg:col-span-5 bg-blue-50/70 border border-blue-200 rounded-3xl p-6 sm:p-8 flex flex-col justify-between shadow-sm relative">
+                        <div class="text-brand-blue opacity-10 absolute top-4 right-6 text-8xl font-serif pointer-events-none">
+                            “
+                        </div>
+
+                        <div>
+                            <div class="flex items-center gap-1 text-amber-400 text-lg mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            
+                            <h3 class="text-xs font-extrabold text-brand-blue uppercase tracking-wider mb-2">Kata Mereka yang Sudah Bergabung:</h3>
+                            
+                            <blockquote class="text-slate-700 italic text-sm sm:text-base leading-relaxed mb-6 relative z-10">
+                                "Dulu takut banget kalau disuruh ngurus pajak kantor. Setelah ikut Brevet di Mandiri Tax Center, semuanya jadi makin jelas dan sistematis!"
+                            </blockquote>
+                        </div>
+
+                        <div class="flex items-center gap-4 pt-4 border-t border-blue-200/80">
+                            <div class="w-12 h-12 rounded-full bg-brand-navy text-white flex items-center justify-center font-bold text-lg shadow">
+                                R
+                            </div>
+                            <div>
+                                <div class="font-bold text-brand-navy text-base">Rian</div>
+                                <div class="text-xs text-slate-500 font-medium">Staf Akuntansi / Alumni MTC</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================
+             SECTION 4: ACTION (Mendorong Tindakan Konsumen)
+             ======================================================== -->
+        <section class="py-16 lg:py-20 bg-gradient-to-br from-slate-900 via-brand-navy to-slate-900 text-white relative overflow-hidden">
+            <!-- Decorative Accent Elements -->
+            <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-blue/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-brand-red/20 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                
+                <span class="inline-block bg-brand-red text-white text-xs sm:text-sm font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-4">
+                    Peluang Karir & Akses Belajar
+                </span>
+
+                <h2 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                    SIAP MAHIR PAJAK DAN TINGKATKAN KARIR & BISNIS ANDA SEKARANG?
+                </h2>
+
+                <p class="text-slate-300 text-sm sm:text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+                    Dapatkan informasi lengkap mengenai jadwal kelas terdekat, kurikulum materi, serta <strong class="text-amber-300 font-semibold">Penawaran Spesial</strong> untuk Kelas Online maupun Offline!
+                </p>
+
+                <!-- Primary Call-to-Action Button -->
+                <div class="mt-8 sm:mt-10">
+                    <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
+                       target="_blank"
+                       class="pulse-subtle inline-flex items-center justify-center gap-3 bg-brand-wagreen hover:bg-emerald-600 text-white text-base sm:text-xl font-extrabold py-5 px-8 sm:px-12 rounded-2xl shadow-wa-glow transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto">
+                        <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+                        <span>KLIK DI SINI UNTUK KONSULTASI & DAFTAR VIA WHATSAPP</span>
+                    </a>
+
+                    <!-- Micro-copy -->
+                    <p class="text-xs sm:text-sm text-slate-300 mt-4 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-users text-amber-400"></i>
+                        <span>(Kuota peserta terbatas untuk menjaga kualitas pembelajaran tiap angkatan)</span>
+                    </p>
+                </div>
+
+                <!-- Trust Guarantee Pills -->
+                <div class="mt-12 pt-8 border-t border-white/10 flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-green text-sm"></i>
+                        <span>Respon Cepat 24/7</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-green text-sm"></i>
+                        <span>Konsultasi Kurikulum Gratis</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-circle-check text-brand-green text-sm"></i>
+                        <span>Pilihan Kelas Online & Offline</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- Brand Info -->
+                <div class="text-center md:text-left">
+                    <a href="https://mandiritaxcenter.id/" target="_blank" class="flex items-center justify-center md:justify-start gap-2">
+                        <span class="text-brand-red font-black text-2xl">m</span>
+                        <span class="text-brand-green font-black text-2xl">t</span>
+                        <span class="text-brand-blue font-black text-2xl">c</span>
+                        <span class="font-extrabold text-white text-lg ml-1">Mandiri Tax Center</span>
+                    </a>
+                    <p class="text-xs text-slate-500 mt-1">Lembaga Pendidikan & Pelatihan Perpajakan Terpercaya</p>
+                </div>
+
+                <!-- Social Media Channels (Matching Poster Footer) -->
+                <div class="flex flex-wrap items-center justify-center gap-4 text-xs">
+                    <a href="https://mandiritaxcenter.id/" target="_blank" class="flex items-center gap-2 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 hover:text-white hover:border-slate-700 transition-all">
+                        <i class="fa-solid fa-globe text-brand-blue"></i>
+                        <span>mandiritaxcenter.id</span>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="flex items-center gap-2 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 hover:text-white hover:border-slate-700 transition-all">
+                        <i class="fa-brands fa-instagram text-pink-500"></i>
+                        <span>@brevetpajak_mtc</span>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="flex items-center gap-2 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 hover:text-white hover:border-slate-700 transition-all">
+                        <i class="fa-brands fa-linkedin text-blue-400"></i>
+                        <span>Mandiri Tax Center</span>
+                    </a>
+                    <a href="https://tiktok.com" target="_blank" class="flex items-center gap-2 bg-slate-900 px-3 py-1.5 rounded-lg border border-slate-800 hover:text-white hover:border-slate-700 transition-all">
+                        <i class="fa-brands fa-tiktok text-slate-200"></i>
+                        <span>@mandiritaxcenter</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-900 text-center text-xs text-slate-600">
+                &copy; 2026 Mandiri Tax Center. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Sticky WhatsApp Button (Bottom Right) -->
+    <div class="fixed bottom-5 right-5 z-50 flex items-center gap-2">
+        <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
+           target="_blank"
+           class="group flex items-center gap-3 bg-brand-wagreen hover:bg-emerald-600 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-wa-glow transition-all duration-300 transform hover:scale-105">
+            <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
+            <span class="hidden sm:inline font-bold text-sm tracking-wide">Konsultasi WhatsApp</span>
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-amber-300"></span>
+            </span>
+        </a>
+    </div>
+
+</body>
+</html>
