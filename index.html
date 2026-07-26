@@ -95,6 +95,24 @@
             100% { transform: translateX(100%) rotate(30deg); }
         }
     </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2167968573722664');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2167968573722664&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body class="antialiased selection:bg-brand-red selection:text-white">
 
@@ -114,9 +132,10 @@
                      onerror="if(!this.dataset.step){this.dataset.step=1;this.src='logo1.jpeg';}else if(this.dataset.step==1){this.dataset.step=2;this.src='logo1.png';}">
             </a>
 
-            <!-- Header CTA Button -->
+            <!-- Header CTA Button with Meta Pixel Lead Track -->
             <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
                target="_blank"
+               onclick="fbq('track', 'Lead');"
                class="inline-flex items-center gap-2 bg-brand-wagreen hover:bg-emerald-600 text-white text-xs sm:text-sm font-bold py-2.5 px-4 sm:px-5 rounded-full shadow-md transition-all duration-300 hover:scale-105">
                 <i class="fa-brands font-bold fa-whatsapp text-lg"></i>
                 <span class="hidden sm:inline">Konsultasi</span> Gratis
@@ -226,10 +245,11 @@
                         </div>
                     </div>
 
-                    <!-- Main Hero CTA Button -->
+                    <!-- Main Hero CTA Button with Meta Pixel Lead Track -->
                     <div class="mt-8 text-center">
                         <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
                            target="_blank"
+                           onclick="fbq('track', 'Lead');"
                            class="pulse-subtle inline-flex items-center justify-center gap-3 bg-brand-wagreen hover:bg-emerald-600 text-white text-base sm:text-xl font-extrabold py-4 px-8 sm:px-10 rounded-2xl shadow-wa-glow transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto">
                             <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
                             <span>Tanya Jadwal & Konsultasi Kelas via WhatsApp</span>
@@ -480,10 +500,11 @@
                     Dapatkan informasi lengkap mengenai jadwal kelas terdekat, kurikulum materi, serta <strong class="text-amber-300 font-semibold">Penawaran Spesial</strong> untuk Kelas Online maupun Offline!
                 </p>
 
-                <!-- Primary Call-to-Action Button -->
+                <!-- Primary Call-to-Action Button with Meta Pixel Lead Track -->
                 <div class="mt-8 sm:mt-10">
                     <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
                        target="_blank"
+                       onclick="fbq('track', 'Lead');"
                        class="pulse-subtle inline-flex items-center justify-center gap-3 bg-brand-wagreen hover:bg-emerald-600 text-white text-base sm:text-xl font-extrabold py-5 px-8 sm:px-12 rounded-2xl shadow-wa-glow transition-all duration-300 transform hover:-translate-y-1 w-full sm:w-auto">
                         <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
                         <span>KLIK DI SINI UNTUK KONSULTASI & DAFTAR VIA WHATSAPP</span>
@@ -535,10 +556,11 @@
         </div>
     </footer>
 
-    <!-- Floating Sticky WhatsApp Button (Bottom Right) -->
+    <!-- Floating Sticky WhatsApp Button (Bottom Right) with Meta Pixel Lead Track -->
     <div class="fixed bottom-5 right-5 z-50 flex items-center gap-2">
         <a href="https://wa.me/6282163159009?text=Halo+Saya+Tertarik+mengikuti+pelatihan+brevet+a+dan+b+Boleh+minta+informasi+jadwal+dan+promonya?" 
            target="_blank"
+           onclick="fbq('track', 'Lead');"
            class="group flex items-center gap-3 bg-brand-wagreen hover:bg-emerald-600 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-wa-glow transition-all duration-300 transform hover:scale-105">
             <i class="fa-brands fa-whatsapp text-2xl sm:text-3xl"></i>
             <span class="hidden sm:inline font-bold text-sm tracking-wide">Konsultasi WhatsApp</span>
